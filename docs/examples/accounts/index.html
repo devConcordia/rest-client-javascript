@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Acconts</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="../src/forge.min.js" ></script>
+		<script type="module" src="main.mjs" ></script>
+	</head>
+	<body>
+		
+		<h1>Acconts</h1>
+		
+		<br/>
+		<div class="note">
+			<p>Para fins de teste, esse exemplo realiza a autenticação com JWT (HS256). A password do usuário realiza a assinatura do JWT.</p>
+		</div>
+		
+		<div id="divLog" class="note" style="display:none" ></div>
+		
+		<div id="divLoading" >
+			<div class="loading" >
+				<div class="spinner"></div>
+			</div>
+		</div>
+		
+		<div id="sign-in" class="view" >
+			
+			<label>
+				<strong>User</strong>
+				<input id="inSignInUser" />
+			</label>
+			
+			<label>
+				<strong>Password</strong>
+				<input type="password" id="inSignInPass" />
+			</label>
+			
+			<button id="btnSignIn" >Sign In</button>
+			
+			<p>Or <a href="#sign-up">Sign Up</a></p>
+			
+		</div>
+		
+		<div id="sign-up" class="view" >
+			
+			<label>
+				<strong>Name</strong>
+				<input id="inSignUpName" />
+			</label>
+			
+			<label>
+				<strong>EMail</strong>
+				<input id="inSignUpEmail" />
+			</label>
+			
+			<label>
+				<strong>User</strong>
+				<input id="inSignUpUser" />
+			</label>
+			
+			<label>
+				<strong>Password</strong>
+				<input type="password" id="inSignUpPass" />
+			</label>
+			
+			<button id="btnSignUp" >Sign Up</button>
+			
+			<p>Or <a href="#sign-in">Sign In</a></p>
+			
+		</div>
+		
+		<div id="user" class="view" >
+			
+			<pre id="preUserData" ></pre>
+			
+			<button id="btnSignOut" >Sign Out</button>
+			
+		</div>
+		
+	</body>
+</html>
