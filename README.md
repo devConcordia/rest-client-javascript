@@ -3,7 +3,7 @@
 
 Esse projeto é uma API para consumir um serviço REST com Javascript.
 
-> [!WARN] 
+> [!WARNING] 
 > Atentis-se as questões de CORS e lembre-se, dependendo de sua aplicação, a chave do serviço que estiver consumindo pode ficar exposta ao realizar requisições diretas do browser.
 
 > [!NOTE]
